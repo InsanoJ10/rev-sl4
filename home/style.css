@@ -40,6 +40,9 @@ nav {
 }
 
 .s1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url('../assets/images/back.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -52,6 +55,44 @@ nav {
 .s2 {
     height: 100vh;
 }
+.wrap-divs{
+    padding: 20px;
+}
+.tittle-div{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    padding: 50px;
+    text-shadow: 2px 3px 10px black;
+}
+.wrap-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+.wrap-btns button{
+    padding: 8px 20px 8px 20px;
+    color: blue;
+    border: none;
+    border-radius: 999px;
+    border: 2px solid blue;
+    background: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 3px 10px black;
+    opacity: 0.5;
+    transition: all 400ms ease-in-out;
+}
+.wrap-btns button:hover{
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 2px 3px 10px rgb(255, 255, 255);
+    border: 2px solid rgb(255, 0, 0);
+    color: red;
+    transform: scale(1.1);
+}
+
 
 .wrap-open, .wrap-open img {
     display: none;
