@@ -12,6 +12,7 @@ nav {
     position: fixed;
     width: 100%;
     background-color: #ffffff;
+    z-index: 999;
 }
 
 .nav-item {
@@ -88,8 +89,8 @@ nav {
     opacity: 1;
     cursor: pointer;
     box-shadow: 2px 3px 10px rgb(255, 255, 255);
-    border: 2px solid rgb(255, 0, 0);
-    color: red;
+    border: 2px solid rgb(0, 225, 255);
+    color: rgb(0, 217, 255);
     transform: scale(1.1);
 }
 
