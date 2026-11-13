@@ -29,13 +29,13 @@ input{
 }
 
 button{
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
     margin-top: 20px;
     width: 100%;
     background: none;
     border: none;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
     transition: all 200ms ease-in-out;
     font-size: 18px
@@ -43,8 +43,8 @@ button{
 
 button:hover{
     cursor: pointer;
-    color: rgb(0, 0, 0);
-    background: rgb(255, 252, 252);
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
 }
 
 .nav-item {
@@ -73,11 +73,6 @@ button:hover{
 }
 
 .s1 {
-    background-image: url('../assets/images/contacts.avif');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -85,10 +80,10 @@ button:hover{
     gap: 10px;
 }
 .formulario{
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 2px 12px rgb(255, 255, 255);
+    box-shadow: 0px 2px 12px rgb(0, 0, 0);
     position: relative;
 }
 
@@ -98,13 +93,29 @@ button:hover{
     left: 50%;
     top: -5px;
     transform: translate(-50%, -50%);
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 25px;
 }
 .wrap-inputs{
     display: flex;
     flex-direction: column;
-    color: white;
+    color: rgb(0, 0, 0);
+}
+
+.img-div{
+    background-image: url("../assets/images/zap.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 50vw;
+}
+.form-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50vw;
 }
 
 .wrap-open, .wrap-open img {
@@ -117,6 +128,9 @@ button:hover{
 
 @media (width <= 1000px) {
     nav {
+        display: none;
+    }
+    .img-div{
         display: none;
     }
     .wrap-open {
